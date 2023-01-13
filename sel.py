@@ -30,5 +30,4 @@ while True:
     next_button = driver.find_element('css selector', '.pagination > li:last-child > a')
     if next_button.get_attribute('href') == driver.current_url:
         break
-    else:
-        next_button.click()
+    next_button.click()
