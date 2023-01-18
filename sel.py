@@ -3,11 +3,9 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 from selenium.webdriver.support.ui import WebDriverWait
+# file that contains the link for data to be parsed and login credentials
+from credentials import login, password, link
 
-# Login credentials
-login = input("login: ")
-password = input("password: ")
-link = input("link: ")
 
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 driver.get(link)
